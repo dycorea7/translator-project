@@ -8,7 +8,7 @@ import requests
 PROJECT_ID = "3b1c567e-6dd0-484d-ad2c-df7eb21d8b7f"
 credentials = {
     "url": "https://us-south.ml.cloud.ibm.com",
-    "apikey": "5GPhzfBpLa8yCy5u5XLXEJhx7_V5FlbMVOOm_-Aj9ecn"
+    "apikey": "5pQADFTfrrIkX2OpM3X0rFfqXTvWB9VbIeixsLHrmH-d"
 }
 
 model_id = "mistralai/mistral-medium-2505"
