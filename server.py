@@ -5,6 +5,16 @@ from flask_cors import CORS
 import os
 from worker import speech_to_text, text_to_speech, watsonx_process_message
 
+import os
+
+PROJECT_ID = os.environ.get("WATSONX_PROJECT_ID")
+credentials = {
+    "url": "https://us-south.ml.cloud.ibm.com",
+    "apikey": os.environ.get("WATSONX_API_KEY")
+}
+STT_API_KEY = os.environ.get("STT_API_KEY")
+TTS_API_KEY = os.environ.get("TTS_API_KEY")
+
 app = Flask(__name__)
 cors = CORS(app, resources={r"/*": {"origins": "*"}})
 
